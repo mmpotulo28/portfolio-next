@@ -14,6 +14,8 @@ import {
 	FaTools,
 	FaUser,
 	FaPhoneSquare,
+	FaGithub,
+	FaYoutube,
 } from "react-icons/fa";
 // eslint-disable-next-line	@next/next/no-css-tags
 import styles from "./header.module.css"; // Ensure this file exists in the correct path
@@ -49,6 +51,8 @@ const Header = () => {
 					<FaFacebook />
 					<FaTwitter />
 					<FaLinkedin />
+					<FaGithub />
+					<FaYoutube />
 				</div>
 			</div>
 

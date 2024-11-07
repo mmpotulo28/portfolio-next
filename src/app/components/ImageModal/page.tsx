@@ -4,8 +4,7 @@ import React from "react";
 import Image from "next/image";
 import useGlobalContext from "../../context/GlobalContext";
 import styles from "./img-modal.module.css";
-import { FaCrosshairs, FaRegTimesCircle } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
+import { FaRegTimesCircle } from "react-icons/fa";
 
 const ImageModal: React.FC = () => {
 	const { isImgModalOpen, imgModalData, closeImageModal } = useGlobalContext();

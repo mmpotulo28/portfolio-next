@@ -35,6 +35,10 @@
 	font-size: var(--fs-large);
 }
 
+.topNav .socials i:hover {
+	color: var(--foreground);
+}
+
 .mainNav {
 	display: flex;
 	flex-direction: row;
