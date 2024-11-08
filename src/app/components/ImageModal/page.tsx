@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import useGlobalContext from "../../context/GlobalContext";
-import styles from "./img-modal.module.css";
+import styles from "./page.module.css";
 import { FaRegTimesCircle } from "react-icons/fa";
 
 const ImageModal: React.FC = () => {
