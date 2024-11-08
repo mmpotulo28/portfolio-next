@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header/page";
 import Footer from "./components/Footer/page";
 import { GlobalProvider } from "./context/GlobalContext";
+// import Head from "next/head";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -21,8 +22,12 @@ export const metadata: Metadata = {
 	description: "Welcome to my Portfolio, Interactive and Responsive Full Stack Web Developer",
 	authors: [{ name: "Manelisi Mpotulo" }],
 	keywords: "Manelisi Mpotulo, portfolio, web developer, software engineer",
-	viewport: "width=device-width, initial-scale=1",
 	robots: "index, follow",
+};
+
+export const viewport = {
+	width: "device-width",
+	initialScale: 1,
 };
 
 export default function RootLayout({
@@ -32,6 +37,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<meta
+				name="google-site-verification"
+				content="7j_MuCkA4qssfr-tjGTpq6LY5pLQQY4pDVtb3b6u4UI"
+			/>
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>
 				<GlobalProvider>
 					<Header />
